@@ -13,8 +13,11 @@ MTA1 has potential utility as a prognostic biomarker and therapeutic target in p
 
 🔬 Tools & Methods
 Dataset Source: cBioPortal (METABRIC Breast Cancer dataset)
+
 Preprocessing: Data integration from Illumina microarray expression and clinical metadata
+
 DEG Analysis: Using the limma package for subtype-specific comparisons (HR+, HER2+, TNBC)
+
 Quantile Grouping: Based on MTA1 expression percentiles
 
 Scoring Metrics:
@@ -29,14 +32,14 @@ ggplot2, survminer, ggpubr, EnhancedVolcano
 
 🛠️ How to Run
 Clone the Repository
-git clone https://github.com/yourusername/MTA1-menopause-breastcancer.git
 cd MTA1-menopause-breastcancer
 Install Required R Packages
 
-r
+R
 install.packages(c("limma", "ggpubr", "pheatmap", "EnhancedVolcano", 
                    "clusterProfiler", "org.Hs.eg.db", "survminer", 
                    "imogimap", "ggplot2", "dplyr"))
+
 Run Analysis Scripts
 Scripts are modular and divided by task:
 
@@ -57,7 +60,7 @@ Analysisextracode.R: Extended analysis and figure generation
 ├── BOXplotsMETA.R
 ├── Analysisextracode.R
 ├── README.md
-└── Outputs/         (e.g., PNG plots, survival curves)
+└── Outputs/ (e.g., PNG plots, survival curves)
 
 
 🔮 Future Prospects
